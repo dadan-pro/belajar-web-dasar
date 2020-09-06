@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>Judul Dokumen</title>
+   <style>
+      /* Semua elemen span */
+       span {
+           color: red;
+       }
+   </style>
+    <style>
+        .red {
+            color: red;
+        }
+  
+        .skyblue-bg {
+            background-color: skyblue;
+        }
+  
+        .fancy {
+            font-weight: bold;
+            text-shadow: 4px 4px 3px #77f;
+        }
+    </style>
+    <style>
+        #special {
+            background-color: skyblue;
+        }
+     </style>
+    <style>
+ 
+        /* <a> element yang menerapkan href attribut */
+        a[href] {
+            color: blue;
+        }
+  
+        /* <a> element yang menerapkan nilai pada href dengan awalan "#" */
+        a[href^="#"] {
+            background-color: gold;
+        }
+  
+        /* <a> element yang menerapkan nilai pada href yang mengandung teks "example" */
+        a[href*="example"] {
+            background-color: silver;
+        }
+  
+        /* <a> element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital*/
+        a[href*="insensitive" i] {
+            color: cyan;
+        }
+  
+        /* <a> element yang menerapkan nilai pada href dengan akhiran ".org" */
+        a[href$=".org"] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<span>Ini merupakan sebuah teks yang berada pada elemen span. Seharusnya elemen ini ditampilkan dengan warna teks merah.</span>
+<p>Ini merupakan sebuah teks yang berada pada elemen paragraf, teks ini tidak seharusnya tidak akan terpengaruh oleh rule.</p>
+<span>Ini merupakan sebuah teks yang berada pada elemen span lainnya. Seharusnya elemen ini ditampilkan dengan warna teks merah juga.</span>
+<p class="red">Paragraf dengan teks berwarna merah</p>
+<p class="skyblue-bg">Paragraf dengan background berwarna biru langit</p>
+<p class="fancy">Paragraf dengan gaya fancy</p>
+<p>Paragraf yang menampilkan teks dengan warna standar tanpa menerapkan styling</p>
+
+<h1 class="red skyblue-bg">Heading dengan teks berwarna merah dan background biru langit</h1>
+<p class="red fancy">Paragraf dengan teks berwarna merah dan bergaya fancy</p>
+<div id="special">
+    <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+ </div>
+ <div >
+    <p>Ini merupakan konten di dalam sebuah div biasa.</p>
+ </div>
+ <ul>
+    <ul>
+        <li><a href="#internal">Internal link</a></li>
+        <li><a href="http://example.com">Example link</a></li>
+        <li><a href="#InSensitive">Insensitive internal link</a></li>
+        <li><a href="http://example.org">Example org link</a></li>
+    </ul>
+ </ul>
+</body>
+</html>

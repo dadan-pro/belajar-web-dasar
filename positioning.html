@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        /* perbedaan static dan non static */
+        /* .box{
+            width:200px;
+            height:200px;
+        }
+        .first {
+            background-color: #60d0a8;
+            }
+ 
+        .second {
+            background-color: #6495ed;
+            position: relative;
+            top:0;
+            left:40px;
+        }
+ 
+        .third {
+             background-color: #ffa500;
+        } */
+        /* bisa digeser dengan property top, right, bottom, maupun left. */
+        /* Perlu kita ingat ya, bahwa properti top, left, right dan bottom pada CSS hanya akan berpengaruh pada elemen yang menerapkan non-static flow (elemen yang menerapkan nilai relative, absolute, dan fixed pada properti position). */
+        /* normal Flow */
+        /* h1{
+            
+            background-color:#aaaaaa;
+            padding:30px;
+        } */
+        /* p{
+            width:450px;
+        } */
+         /* relative positioning*/
+        /* .relative{
+            position:relative;
+            top:10px;
+            left:100px;
+        } */
+        /* absolute positioning*/
+        /* .absolute {
+           position: absolute;
+           top: 0;
+           left: 50px;
+       }
+       .parent{
+           width:500px;
+           margin:0 auto;
+           border:4px solid black;
+           padding:20px;
+           
+       }
+       h1{
+           width:250px;
+       } */
+       /* fixed positioning */
+       h3{
+           padding:10px;
+           background-color:#aaaaaa;
+           margin:0;
+           width:100%;
+
+       }
+       .fixed{
+           position:fixed;
+           top:0;
+           left:0;
+       }
+      
+
+    </style>
+</head>
+<body>
+    <!-- perbedaan static dan non static -->
+   <!-- <div class="box first"></div>
+   <div class="box second"></div>
+   <div class="box third"></div> -->
+    <!-- normal flow -->
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iusto non optio vel voluptas? Assumenda
+   blanditiis consequatur doloribus porro quasi similique vero voluptatibus. Adipisci, tenetur.</p> -->
+ <!-- relative positioning  r -->
+<!-- <p class="relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur dolore eligendi, esse fuga
+   hic laboriosam nobis nostrum, nulla omnis optio pariatur repellendus reprehenderit saepe, sit soluta vel vero!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti doloremque et excepturi
+   expedita labore libero, placeat, quaerat rerum ullam vitae voluptate. Accusantium et explicabo qui tenetur unde.
+   Amet aperiam doloremque enim, expedita id illo minima porro quod.</p> -->
+   <!-- absolute flow -->
+   <!-- <h1 class="absolute">Lorem ipsum dolor sit amet.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iusto non optio vel voluptas? Assumenda
+   blanditiis consequatur doloribus porro quasi similique vero voluptatibus. Adipisci, tenetur.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur dolore eligendi, esse fuga
+   hic laboriosam nobis nostrum, nulla omnis optio pariatur repellendus reprehenderit saepe, sit soluta vel vero!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti doloremque et excepturi
+   expedita labore libero, placeat, quaerat rerum ullam vitae voluptate. Accusantium et explicabo qui tenetur unde.
+   Amet aperiam doloremque enim, expedita id illo minima porro quod.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores blanditiis cumque eos ex
+   expedita facilis laborum maiores necessitatibus neque, officiis pariatur porro temporibus unde veritatis vitae?
+   Beatae dolores error ex fugiat molestias neque placeat quod ratione repellat veritatis! A culpa cumque, delectus
+   distinctio ducimus earum et ex quas quia quis tempore temporibus veritatis voluptates. Delectus doloremque mollitia
+   nobis?</p> -->
+
+   <!-- <div class="parent">
+    <h1 class="absolute">Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iusto non optio vel voluptas? Assumenda blanditiis consequatur doloribus porro quasi similique vero voluptatibus. Adipisci, tenetur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur dolore eligendi, esse fuga hic laboriosam nobis nostrum, nulla omnis optio pariatur repellendus reprehenderit saepe, sit soluta vel vero!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti doloremque et excepturi expedita labore libero, placeat, quaerat rerum ullam vitae voluptate. Accusantium et explicabo qui tenetur unde. Amet aperiam doloremque enim, expedita id illo minima porro quod.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores blanditiis cumque eos ex expedita facilis laborum maiores necessitatibus neque, officiis pariatur porro temporibus unde veritatis vitae? Beatae dolores error ex fugiat molestias neque placeat quod ratione repellat veritatis! A culpa cumque, delectus distinctio ducimus earum et ex quas quia quis tempore temporibus veritatis voluptates. Delectus doloremque mollitianobis?</p>
+ </div> -->
+    <!-- fixed Positioning -->
+ 
+    <div class="container">
+        <h3 class="fixed">Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium iusto non optio vel voluptas? Assumenda blanditiis consequatur doloribus porro quasi similique vero voluptatibus. Adipisci, tenetur.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus commodi consectetur dolore eligendi, esse fuga hic laboriosam nobis nostrum, nulla omnis optio pariatur repellendus reprehenderit saepe, sit soluta vel vero!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aut corporis deleniti doloremque et excepturi expedita labore libero, placeat, quaerat rerum ullam vitae voluptate. Accusantium et explicabo qui tenetur unde. Amet aperiam doloremque enim, expedita id illo minima porro quod.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid asperiores blanditiis cumque eos ex expedita facilis laborum maiores necessitatibus neque, officiis pariatur porro temporibus unde veritatis vitae? Beatae dolores error ex fugiat molestias neque placeat quod ratione repellat veritatis! A culpa cumque, delectus distinctio ducimus earum et ex quas quia quis tempore temporibus veritatis voluptates. Delectus doloremque mollitia nobis?</p>
+        </body>
+    </div>
+</body>
+</html>

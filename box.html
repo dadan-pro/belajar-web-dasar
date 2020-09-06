@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Demo CSS box-sizing - apacara.com</title>
+    <style>
+      div {margin: 1em}
+
+      .ukuran-asli {
+        	height: 150px;
+      	width: 200px;
+          background: #FFFCB5;
+      }
+      .dengan-border-padding {
+      	height: 150px;
+      	width: 200px;
+      	background: #FFFCB5;
+      	border: 10px solid #7B9AD3;
+      	padding: 10px;
+      }
+      .borderbox {
+      	-moz-box-sizing: border-box;
+      	-webkit-box-sizing: border-box;
+      	box-sizing: border-box;
+      	height: 150px;
+      	width: 200px;
+      	background: #FFFCB5;
+      	border: 10px solid #7B9AD3;
+      	padding: 10px;
+      }
+      .paddingbox {
+      	-moz-box-sizing: padding-box;
+      	-webkit-box-sizing: padding-box;
+      	box-sizing: padding-box;
+      	height: 150px;
+      	width: 200px;
+      	background: #FFFCB5;
+      	border: 10px solid #7B9AD3;
+      	padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ukuran-asli">
+      ukuran asli
+    </div>
+
+    <div class="dengan-border-padding">
+      diberi border dan padding, ukurannya bertambah besar.
+    </div>
+
+    <div class="borderbox">
+      <code>box-sizing:border-box</code> - Ukurannya sesuai aslinya: height dan width. Sedangkan border dan padding berada didalamnya
+    </div>
+
+    <div class="paddingbox">
+      <code>box-sizing:padding-box</code> - Ukurannya berbeda dari yang lain.
+    </div>
+
+  </body>
+</html>
